@@ -1,17 +1,243 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Taurophylax Portfolio</title>
-  </head>
-  <body>
-    <main>
-      <h1>Portfolio site coming soon</h1>
-      <p>
-        This repository is configured for GitHub Pages. Replace this file with your
-        portfolio HTML when ready.
-      </p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Carr — Data Engineer &amp; Software Engineer</title>
+  <meta name="description" content="James Carr is a data engineer and software engineer building research data infrastructure at EMSL, from lab instruments to peta-scale storage. Available for consulting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__top">
+      <a class="logo" href="#top">James Carr<span class="logo__dot">·</span><span class="logo__role">data engineer</span></a>
+    </div>
+    <nav class="flow-nav wrap" aria-label="Page sections">
+      <div class="flow-nav__row">
+        <div class="flow-nav__track"><div class="flow-nav__fill"></div></div>
+        <a class="flow-node" data-stage="source" href="#about"><span class="flow-node__index">01</span><span class="flow-node__label">Source</span></a>
+        <a class="flow-node" data-stage="schema" href="#skills"><span class="flow-node__index">02</span><span class="flow-node__label">Schema</span></a>
+        <a class="flow-node" data-stage="transform" href="#projects"><span class="flow-node__index">03</span><span class="flow-node__label">Transform</span></a>
+        <a class="flow-node" data-stage="serve" href="#consulting"><span class="flow-node__index">04</span><span class="flow-node__label">Serve</span></a>
+        <a class="flow-node" data-stage="sink" href="#contact"><span class="flow-node__index">05</span><span class="flow-node__label">Sink</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="top">
+      <div class="wrap hero__inner">
+        <p class="eyebrow">Data engineer · Software engineer</p>
+        <h1 class="hero__headline">Data infrastructure for science, from instrument to archive.</h1>
+        <p class="hero__lead">I'm James Carr. At EMSL, I build the systems that carry research data from lab instruments, through analysis, and into peta-scale storage. I also consult on data systems for teams who want an experienced second opinion.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="#consulting">Work with me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">01 · Source</p>
+          <h2>About</h2>
+        </div>
+        <div class="about__grid">
+          <div>
+            <figure class="portrait">
+              <img src="portrait.jpg" alt="Portrait of James Carr">
+              <div class="portrait__tint" aria-hidden="true"></div>
+            </figure>
+            <p class="portrait__caption">portrait.jpg</p>
+          </div>
+          <div class="about__content">
+            <div class="about__bio">
+              <p>I started writing code in 2004, with C++ in high school, and I've never drifted far from it, even while trying on other careers. I once joined a team of biologists whose job was to read journal articles and record data points by hand. I spent the first couple of weeks falling behind everyone, because I was writing a scraper instead. Once it worked, it pulled the data about 50,000 times faster.</p>
+              <p>Working only in tech burned me out a bit, so I've always paired it with another field: cybersecurity for a while, then environmental science with a focus on climate, and eventually back to biology for a master's in bioinformatics and genomics. I'm an engineer first, but knowing the science makes me more useful to the researchers generating the data.</p>
+              <p>Today I work at EMSL, where I get to move science data around all day. AI is a core part of my daily work, and I enjoy testing bleeding-edge tools to see what else we can automate. That leaves more of my time for what I'm best at: architecture, schemas, APIs, and tracking down the edge case everyone else missed, usually by actually reading the logs.</p>
+            </div>
+            <dl class="record">
+              <div class="record__row"><dt>coding</dt><dd>Since 2004</dd></div>
+              <div class="record__row"><dt>based</dt><dd>Eugene, Oregon — remote</dd></div>
+              <div class="record__row"><dt>currently</dt><dd>Environmental Molecular Sciences Laboratory (EMSL), PNNL</dd></div>
+              <div class="record__row"><dt>education</dt><dd>Master's in Biology — Bioinformatics &amp; Genomics</dd></div>
+              <div class="record__row"><dt>off-hours</dt><dd>Stand-up comedy, movies, the garage</dd></div>
+              <div class="record__row"><dt>opinions</dt><dd>Keep secrets out of the codebase. Pin your versions.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">02 · Schema</p>
+          <h2>Skills &amp; stack</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <p class="skill-group__label">languages[]</p>
+            <ul class="tag-list">
+              <li>Python</li><li>SQL</li><li>C#</li><li>C++</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group__label">pipelines[]</p>
+            <ul class="tag-list">
+              <li>Airflow</li><li>Temporal</li><li>Kafka</li><li>Celery</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group__label">data[]</p>
+            <ul class="tag-list">
+              <li>PostgreSQL</li><li>Apache Iceberg</li><li>PyIceberg</li><li>PyArrow</li><li>Trino</li><li>Lakekeeper</li><li>VAST</li><li>HPSS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group__label">platform[]</p>
+            <ul class="tag-list">
+              <li>FastAPI</li><li>Docker</li><li>Kubernetes</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group__label">science[]</p>
+            <ul class="tag-list">
+              <li>Bioinformatics</li><li>Genomics</li><li>Lab automation</li><li>Instrument data</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group__label">practice[]</p>
+            <ul class="tag-list">
+              <li>Schema design</li><li>API design</li><li>Log forensics</li><li>AI-assisted development</li>
+            </ul>
+          </div>
+        </div>
+        <p class="skills-note">Plus a long tail of others. If it's not listed, ask.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">03 · Transform</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card--featured">
+            <p class="project-card__role">Sole developer &amp; architect</p>
+            <h3>Data automation for AMP2</h3>
+            <p>The data system behind the <a href="https://www.emsl.pnnl.gov/science/instruments-resources/anaerobic-microbial-phenotyping-platform-amp2">Anaerobic Microbial Phenotyping Platform (AMP2)</a>, EMSL's robotic lab for studying microbes that live without oxygen. It coordinates runs across 18 instruments, collects what they produce, runs analysis and AI models on the results, and routes everything to long-term storage. It's in its pilot phase today, and it's being designed to scale up to <a href="https://www.emsl.pnnl.gov/microbial-molecular-phenotyping-capability-m2pc">M2PC</a>, a planned facility with more than 30,000&nbsp;sq&nbsp;ft of instrumentation that will move terabytes of data every day.</p>
+            <ul class="tag-list tag-list--sm">
+              <li>18 instruments in pilot</li><li>M2PC: 30,000+&nbsp;sq&nbsp;ft</li><li>Terabytes per day</li><li>AI models in the loop</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <p class="project-card__role">Lead developer</p>
+            <h3>Peta-scale data storage</h3>
+            <p>Lead developer on two systems that hold EMSL's scientific data: a lakehouse that makes it queryable, and the catalog behind the long-term archive that preserves it. The lakehouse runs on a 3.5&nbsp;PB VAST flash tier, and the archive tier is over 70&nbsp;PB.</p>
+            <ul class="tag-list tag-list--sm">
+              <li>3.5&nbsp;PB VAST flash tier</li><li>70+&nbsp;PB archive tier</li><li>Lakehouse</li><li>Archive catalog</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <p class="project-card__role">Ongoing</p>
+            <h3>Spreadsheets to systems</h3>
+            <p>The request I get most often: a folder of messy, sparse CSV and Excel files that needs to become a real database with an API in front of it. Around that, a long tail of CRUD apps, ETL scripts, full-stack tools, and architecture and design work.</p>
+            <ul class="tag-list tag-list--sm">
+              <li>Schema design</li><li>APIs</li><li>ETL</li><li>Full-stack</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="consulting">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">04 · Serve</p>
+          <h2>Consulting</h2>
+        </div>
+        <p class="lead">I consult alongside my role at EMSL, for anyone from startups to national labs. Most of the work is advisory: system designs, architecture and code reviews, and documentation your team will actually use.</p>
+        <div class="service-grid" style="margin-top: var(--space-4);">
+          <article class="service-card">
+            <p class="service-card__index">01</p>
+            <h3>Introduction</h3>
+            <p>A conversation about what you're building, where it's stuck, and whether I'm the right fit.</p>
+            <p class="service-card__meta">Cost — free</p>
+          </article>
+          <article class="service-card">
+            <p class="service-card__index">02</p>
+            <h3>Ongoing consultation</h3>
+            <p>A recurring arrangement for designs, reviews, and documentation, shaped around your team's cadence.</p>
+            <p class="service-card__meta">Terms — negotiated</p>
+          </article>
+          <article class="service-card">
+            <p class="service-card__index">03</p>
+            <h3>Coding projects</h3>
+            <p>Hands-on builds are possible, but scope and fit matter more here, so we'll talk it through first.</p>
+            <p class="service-card__meta">Terms — by discussion</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Process</p>
+          <h2>How an engagement runs</h2>
+        </div>
+        <ol class="process-list">
+          <li>
+            <span class="process-list__index">01</span>
+            <div><h3>Free introduction</h3><p>We talk through what you're building and where it hurts. No cost, no obligation.</p></div>
+          </li>
+          <li>
+            <span class="process-list__index">02</span>
+            <div><h3>Conflict-of-interest review</h3><p>Before anything else, I confirm the work doesn't conflict with my role at EMSL.</p></div>
+          </li>
+          <li>
+            <span class="process-list__index">03</span>
+            <div><h3>Agreement</h3><p>We settle scope, cadence, and rate for ongoing consultation.</p></div>
+          </li>
+          <li>
+            <span class="process-list__index">04</span>
+            <div><h3>Ongoing work</h3><p>Designs, reviews, and documentation, delivered on a schedule that suits your team.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">05 · Sink</p>
+          <h2>Contact</h2>
+        </div>
+        <p class="lead">Email is the best way to reach me. Introductions are always free.</p>
+        <dl class="record" style="margin-top: var(--space-3); max-width: 32rem;">
+          <div class="record__row"><dt>email</dt><dd>james.carr87<span class="decoy">.nospam</span>&#64;gmail<span class="decoy">.invalid</span>&#46;com</dd></div>
+          <div class="record__row"><dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/jamescarr541/">linkedin.com/in/jamescarr541</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© 2026 James Carr.</p>
+      <p class="site-footer__meta">Built with HTML5 &amp; CSS — no JavaScript.</p>
+      <p class="site-footer__disclaimer">This is a personal site. The views and opinions here are my own and do not represent those of Pacific Northwest National Laboratory (PNNL) or the Environmental Molecular Sciences Laboratory (EMSL).</p>
+    </div>
+  </footer>
+
+</body>
 </html>
